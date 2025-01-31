@@ -1,0 +1,12 @@
+img {
+  width: 4%;
+  height: 4%;
+}
+
+li {
+  font-weight: 600;
+}
+
+.navbar {
+  transition: all, 2s;
+}

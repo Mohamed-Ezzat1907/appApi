@@ -1,0 +1,24 @@
+<section class="mt-5 py-5">
+  <h1 appChangeColor [textColor]="'#dc3545'" class="mb-3">Movies Brand</h1>
+
+  <div class="row g-4">
+    @for (mov of movies; track mov.id) {
+
+    <div class="col-md-3">
+      <div class="card h-100">
+        <img
+          class="card-img-top"
+          [src]="imgPath + mov.poster_path"
+          alt="{{ mov.title }}"
+        />
+        <div class="card-body">
+          <h4 class="card-title" appChangeColor [textColor]="'#dc3545'">
+            Title: {{ mov.title ?? mov.name }}
+          </h4>
+          <p class="card-text">over view: {{ mov.overview }}</p>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>
